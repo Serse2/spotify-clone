@@ -1,0 +1,13 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--sp-2);
+  gap: var(--sp-2);
+  background-color: var(--background-base);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  border: 0.5px solid #212121;
+  margin: var(--sp-2) auto;
+}

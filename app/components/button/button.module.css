@@ -1,0 +1,26 @@
+.primary {
+  background-color: #1fdf64;
+  border-radius: 30px;
+  padding: var(--sp-1) var(--sp-4);
+  border: 1px solid #1fdf64;
+  cursor: pointer;
+  font-weight: 500;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.secondary {
+  background-color: transparent;
+  border-radius: 30px;
+  padding: var(--sp-1) var(--sp-4);
+  border: 1px solid #1fdf64;
+  cursor: pointer;
+  font-weight: 500;
+  width: fit-content;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}

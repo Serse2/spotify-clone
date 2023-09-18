@@ -1,34 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Clone Spotify
 
-## Getting Started
+A Next project that clone spotify
 
-First, run the development server:
+## Technologies and Libraries used
+
+- [Next.JS 13](https://nextjs.org/)
+- [NextAuth.js](https://next-auth.js.org/) OAuth authentication
+- Css module for styling
+- Typescript
+
+## Features
+
+- Log-in into the application using Spotify OAuth through the next-auth package
+- View all the playlists created by the user
+- View all the top track created by the user
+- Display all the tracks in a playlist with possibility to search, add and
+  remove tracks
+- Play a track with the default UI by browser
+- Create a new playlist
+
+## To-do features
+
+- [ ] Add test for client and server component
+- [ ] Better manage the mapping of the data
+- [ ] Use a custom track player
+- [ ] Make responsive the UI
+
+## Run Locally
+
+Clone the project
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Go to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd spotify-clone
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Install dependencies
 
-## Learn More
+```bash
+  npm install
+  # or
+  yarn
+```
 
-To learn more about Next.js, take a look at the following resources:
+Set env variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`SPOTIFY_CLIENT_SECRET`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`SPOTIFY_CLIENT_ID`
 
-## Deploy on Vercel
+`NEXTSPOTIFY_REDIRECT_URI`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`NEXTAUTH_SECRET`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The `SPOTIFY_CLIENT_SECRET` and `SPOTIFY_CLIENT_ID` follow this
+[docs](https://developer.spotify.com/documentation/web-api)
+
+To create `NEXTAUTH_SECRET``, open your terminal, run the command below and copy
+the value generated to the .env file.
+
+```bash
+openssl rand -base64 32
+```
+
+Start the server
+
+```bash
+  npm run dev
+  # or
+  yarn dev
+```

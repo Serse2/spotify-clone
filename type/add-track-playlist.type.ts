@@ -1,0 +1,3 @@
+type AddTrackToPlaylist = {
+  uris: string[]
+}
