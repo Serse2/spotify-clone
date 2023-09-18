@@ -31,7 +31,7 @@ A Next project that clone spotify
 Clone the project
 
 ```bash
-  git clone
+  git clone git@github.com:Serse2/spotify-clone.git
 ```
 
 Go to the project directory
