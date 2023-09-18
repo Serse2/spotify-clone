@@ -1,10 +1,11 @@
 import { Session } from 'next-auth'
 
-export const isValidSession = async (session: Session | null) => {
+export const isValidSession = (session: Session | null) => {
   if (
     !session ||
     Math.floor(Date.now()) >= new Date(session.user.expiresAt! * 1000).getTime()
   ) {
+    console.log('Session is invalid')
     return false
   }
   return true

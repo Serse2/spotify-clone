@@ -50,19 +50,25 @@ Install dependencies
 
 Set env variables
 
-`SPOTIFY_CLIENT_SECRET`
+`NEXTSPOTIFY_CLIENT_SECRET`
 
-`SPOTIFY_CLIENT_ID`
+`NEXTSPOTIFY_CLIENT_ID`
 
 `NEXTSPOTIFY_REDIRECT_URI`
 
 `NEXTAUTH_SECRET`
 
-The `SPOTIFY_CLIENT_SECRET` and `SPOTIFY_CLIENT_ID` follow this
+The `NEXTSPOTIFY_CLIENT_SECRET` and `NEXTSPOTIFY_CLIENT_ID` follow this
 [docs](https://developer.spotify.com/documentation/web-api)
 
-To create `NEXTAUTH_SECRET``, open your terminal, run the command below and copy
+We you create the project inside the Redirect URis field you need to put
+`http://localhost:3000/api/auth/callback/spotify`
+
+To create `NEXTAUTH_SECRET`, open your terminal, run the command below and copy
 the value generated to the .env file.
+
+For production you need to replace `http://localhost:3000` with your production
+domain.
 
 ```bash
 openssl rand -base64 32

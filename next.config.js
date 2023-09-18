@@ -8,7 +8,8 @@ const nextConfig = {
       'i.scdn.co',
       'lineup-images.scdn.co',
       'mosaic.scdn.co',
-      'newjams-images.scdn.co'
+      'newjams-images.scdn.co',
+      'image-cdn-ak.spotifycdn.com'
     ]
   },
   env: {
