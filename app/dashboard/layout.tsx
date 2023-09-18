@@ -10,8 +10,8 @@ export default function RootLayout({
     <section>
       <Image
         src='/spotify_logo.png'
-        width={320}
-        height={96}
+        width={200}
+        height={60}
         objectFit='contain'
         alt='Spotify logo'
       />
